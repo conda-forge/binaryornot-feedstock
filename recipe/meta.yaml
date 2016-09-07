@@ -29,6 +29,7 @@ test:
     - coverage
     - hypothesis
     - python
+    - setuptools
   commands:
     - cd "{{ environ["SRC_DIR"] }}"
     - python setup.py test
