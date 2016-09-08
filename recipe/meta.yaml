@@ -9,25 +9,30 @@ package:
 
 source:
   fn: {{ gh_repo }}-{{ version }}.tar.gz
-  url: https://github.com/{{ gh_org }}/{{ gh_repo }}/archive/{{ version }}.tar.gz
-  sha256: 2d2fa466cf6755638af0295b6ad048543e31332b40e905bbf546e28f63eeb9be
+  url: https://pypi.io/packages/source/{{ gh_repo[0] }}/{{ gh_repo }}/{{ gh_repo }}-{{ version }}.tar.gz
+  sha256: ab0f387b28912ac9c300db843461359e2773da3b922ae378ab69b0d85b288ec8
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
   build:
     - python
+    - setuptools
   run:
     - python
     - chardet
 
 test:
-  files:
-    - requirements.txt
   requires:
     - coverage
+    - hypothesis
+    - python
+    - setuptools
+  commands:
+    - cd "{{ environ["SRC_DIR"] }}"
+    - python setup.py test
 
 about:
   home: https://github.com/{{ gh_org }}/{{ gh_repo }}
