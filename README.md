@@ -12,6 +12,18 @@ Summary: Ultra-lightweight pure Python package to check if a file is binary or t
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/binaryornot-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/binaryornot-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/binaryornot-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/binaryornot-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/binaryornot-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/binaryornot-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/binaryornot/badges/version.svg)](https://anaconda.org/conda-forge/binaryornot)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/binaryornot/badges/downloads.svg)](https://anaconda.org/conda-forge/binaryornot)
+
 Installing binaryornot
 ======================
 
@@ -67,18 +79,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/binaryornot-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/binaryornot-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/binaryornot-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/binaryornot-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/binaryornot-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/binaryornot-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/binaryornot/badges/version.svg)](https://anaconda.org/conda-forge/binaryornot)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/binaryornot/badges/downloads.svg)](https://anaconda.org/conda-forge/binaryornot)
 
 
 Updating binaryornot-feedstock

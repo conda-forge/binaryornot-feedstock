@@ -13,7 +13,7 @@ source:
   sha256: ab0f387b28912ac9c300db843461359e2773da3b922ae378ab69b0d85b288ec8
 
 build:
-  number: 1
+  number: 2
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -25,13 +25,14 @@ requirements:
     - chardet
 
 test:
+  source_files:
+    - .
   requires:
     - coverage
     - hypothesis
     - python
     - setuptools
   commands:
-    - cd "{{ environ["SRC_DIR"] }}"
     - python setup.py test
 
 about:
