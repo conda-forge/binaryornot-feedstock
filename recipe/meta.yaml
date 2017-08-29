@@ -1,4 +1,4 @@
-{% set version = "0.4.3" %}
+{% set version = "0.4.4" %}
 {% set gh_org = "audreyr" %}
 {% set gh_repo = "binaryornot" %}
 
@@ -10,7 +10,7 @@ package:
 source:
   fn: {{ gh_repo }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ gh_repo[0] }}/{{ gh_repo }}/{{ gh_repo }}-{{ version }}.tar.gz
-  sha256: d359566c1744526be6ea47e56bbc6f506a76cabdd49c09f6847520594f1b309e
+  sha256: 359501dfc9d40632edc9fac890e19542db1a287bbcfa58175b66658392018061
 
 build:
   number: 2
