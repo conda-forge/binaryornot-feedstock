@@ -9,21 +9,21 @@ package:
 
 source:
   fn: {{ gh_repo }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ gh_repo[0] }}/{{ gh_repo }}/{{ gh_repo }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ gh_repo[0] }}/{{ gh_repo }}/{{ gh_repo }}-{{ version }}.tar.gz
   sha256: 359501dfc9d40632edc9fac890e19542db1a287bbcfa58175b66658392018061
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 2
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python {{ python_min }}
     - setuptools
   run:
-    - python
+    - python >={{ python_min }}
     - chardet
 
 test:
@@ -32,7 +32,7 @@ test:
   requires:
     - coverage
     - hypothesis
-    - python
+    - python {{ python_min }}
     - setuptools
   commands:
     - python setup.py test
