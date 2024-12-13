@@ -9,7 +9,6 @@ Package license: BSD-3-Clause
 
 Summary: Ultra-lightweight pure Python package to check if a file is binary or text.
 
-
 Current build status
 ====================
 
