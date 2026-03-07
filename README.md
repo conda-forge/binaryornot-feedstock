@@ -3,11 +3,13 @@ About binaryornot-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/binaryornot-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/audreyr/binaryornot
+Home: https://pypi.org/project/binaryornot
 
 Package license: BSD-3-Clause
 
 Summary: Ultra-lightweight pure Python package to check if a file is binary or text.
+
+Development: https://github.com/audreyr/binaryornot
 
 Current build status
 ====================
